@@ -1,17 +1,7 @@
 // localStorage.clear();
-let arrayJSON = localStorage.getItem("array");
-let array = JSON.parse(arrayJSON) || [];
-localStorage.setItem("array", JSON.stringify(array));
-// let arrayObj = array.map(function(value, index){
-//     let newUser = {
-//         name: value.name,
-//         id: index + 1
-//     };
-//     return newUser;
-// })
-// arrayObj.push(array);
+let array = JSON.parse(localStorage.getItem("array"))? JSON.parse(localStorage.getItem("array")) : [];
+console.log(JSON.parse(localStorage.getItem("array")));
 let form = document.forms.form;
-let target = document.getElementById('target');
 let input = document.getElementById('input');
 let divBox = document.getElementById('divBox');
 let check = document.getElementById('check');
@@ -59,8 +49,8 @@ buttonSortByName.onclick = function () {
     }
 }
     array.sort(function(a, b) {
-        let valueA = a.name?.split('=')[0];
-        let valueB = b.name?.split('=')[0];
+        let valueA = a.name?.split('=')[0] || '';
+        let valueB = b.name?.split('=')[0] || '';
         return valueA.localeCompare(valueB);
     });
     for (let i = 0; i < array.length; i++){
@@ -78,8 +68,8 @@ buttonSortByValue.onclick = function () {
     }
 }
     array.sort(function(a, b) {
-        let valueA = a.name?.split('=')[1];
-        let valueB = b.name?.split('=')[1];
+        let valueA = a.name?.split('=')[1] || '';
+        let valueB = b.name?.split('=')[1] || '';
         return valueA.localeCompare(valueB);
     });
     for (let i = 0; i < array.length; i++){
