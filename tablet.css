@@ -1,0 +1,76 @@
+@media screen and (min-width: 480px) and (max-width: 900px){
+    .contentBox{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 100px auto;
+        background: white;
+        padding: 20px;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        text-align: start;
+        padding: 30px 0 40px 20px;
+    }
+    #form{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 20px 20px;
+        gap: 17px;
+    }
+    #input{
+        width: 80%;
+        height: 26px;
+    }
+    #target{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: 17px;
+
+    }
+    #divBox{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 70%;
+        height: 300px;
+        border: 1.5px solid silver;
+        padding: 5px;
+    }
+    #divButton{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: initial;
+        padding: 5px;
+        gap: 10px;
+
+    }
+    #buttonSortByName, #buttonSortByValue{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding: 2px 2px;
+        margin-left: 0;
+        width: 90px;
+        height: 30px;
+    }
+    #buttonSortByDelete{
+        width: 55px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding: 2px 2px;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+}
