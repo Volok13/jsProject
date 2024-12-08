@@ -31,7 +31,6 @@ form.onsubmit = function(ev){
         localStorage.setItem("array", JSON.stringify(array));
 
         let p = document.createElement('p');
-        p.classList.add('pDiv');
         divBox.appendChild(p);
         p.innerText = value.name;
         input.value = '';
