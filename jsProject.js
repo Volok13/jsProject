@@ -26,6 +26,7 @@ form.onsubmit = function(ev){
 
     console.log(value.name);
     if(value.name) {
+
         array.push({name: input.value });
         localStorage.setItem("array", JSON.stringify(array));
 
