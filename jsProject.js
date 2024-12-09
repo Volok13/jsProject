@@ -19,7 +19,7 @@ if(array){
 
 form.onsubmit = function(ev){
     ev.preventDefault();
-    if(!input.value.match(/^\w+\s*=\s*\w+$/)){
+    if(!input.value.match(/^\w+\s*=\s*\w+$/)) {
         return false;
     }
     let value = {name: input.value};
